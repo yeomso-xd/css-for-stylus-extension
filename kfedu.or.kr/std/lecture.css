@@ -1,0 +1,65 @@
+/* 로딩 화면 연하게 -- 번쩍일 때마다 눈 아픔 */
+.loadingWrap {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 컨테이너 가로 길이 제한 줄이기 -- 갤럭시북 3 Pro(16인치)에서 보기 불편함 */
+@media screen and (max-width: 1440px) {
+    html[data-boxed-layout=boxed] .container-fluid,
+    html[data-boxed-layout=boxed] .container-sm,
+    html[data-boxed-layout=boxed] .container-md,
+    html[data-boxed-layout=boxed] .container-lg,
+    html[data-boxed-layout=boxed] .container-xl,
+    html[data-boxed-layout=boxed] .container-xxl {
+        max-width: 900px;
+    }
+}
+
+/* '출석'과 '학습중' 상태 색 교환 -- 개인적 취향 */
+/* 초록색 = 완전한 안전, 파란색 = 바람직한 방향. 빨강의 보색은 초록 */
+.attendColor01 {
+    /* 출석 */
+    background-color: var(--bs-green);
+    color: var(--bs-green);
+}
+.attendColor05 {
+    /* 학습중 */
+    background-color: #46A5FD;
+    color: #46A5FD;
+}
+
+/* 강의 종류 (예: 동영상, 유튜브, 자료...) 색 연하게 -- 중요하지 않은 정보 */
+/* 아직 주석 안 달린 배지는 수정하지 않음 */
+/* Hue는 원본과 같고 Saturation, Lightness만 바꿨습니다 */
+.badge.tdl01 {background-color:rgba(198,206,217,0.6);}
+.badge.tdl02 {background-color:hsl(47, 70%, 90%);} /* 동영상 */
+.badge.tdl03 {background-color:hsl(38, 70%, 90%);} /* 자료 */
+.badge.tdl04 {background-color:hsl(141, 60%, 90%);} /* 과제 */
+.badge.tdl05 {background-color:hsl(177, 50%, 90%);} /* 토론 */
+.badge.tdl06 {background-color:rgba(66,153,225,0.6);}
+.badge.tdl07 {background-color:hsl(202, 70%, 90%);} /* 퀴즈 */
+.badge.tdl08 {background-color:rgba(234,122,129,0.6);}
+.badge.tdl09 {background-color:rgba(48,115,63,0.4);}
+.badge.tdl10 {background-color:rgba(45,140,255,0.6);}
+.badge.tdl11 {background-color:hsl(0, 60%, 90%);} /* 유튜브 */
+.badge.tdl12 {background-color:rgba(0,166,231,0.6);}
+.badge.tdl13 {background-color:rgba(236,16,21,0.5);}
+
+/* '출석 미반영' 글씨 색 변경 -- 출석 미반영은 위험 X 안전 O */
+/* ⭐ 가장 불편한 부분 */
+.learningRow .text-danger {
+    color: var(--bs-green) !important;
+}
+
+/* 강의 '미완료', '완료' 상태 강조 -- 자주 확인하는 정보  */
+.lecture-item .lecture-list > li .text_badge {
+    font-weight: bold;
+    font-size: 0.85em;
+    padding: 0.2em;
+    border-radius: 6px;
+}
+
+.text_badge.complete {
+    color: var(--bs-green);
+    border-color: var(--bs-green);
+}
