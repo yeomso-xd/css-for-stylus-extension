@@ -5,10 +5,10 @@
 ### 원광대학교 Waffle-i
 |웹페이지|URL|파일 바로가기|
 |---|---|---|
-|대시보드 (시작 화면)|https://lxp.wku.ac.kr/home/view/std/dashBoard|[[🔗]](lxp.wku.ac.kr\home\view\std\dashBoard.css)|
-|강의 홈|https://lxp.wku.ac.kr/std/lecture|[[🔗]](lxp.wku.ac.kr\std\lecture.css)|
+|대시보드 (시작 화면)|https://lxp.wku.ac.kr/home/view/std/dashBoard|[[🔗]](./lxp.wku.ac.kr/home/view/std/dashBoard.css)|
+|강의 홈|https://lxp.wku.ac.kr/std/lecture|[[🔗]](./lxp.wku.ac.kr/std/lecture.css)|
 
 ### 대학 기초융합교육 컨소시엄
 |웹페이지|URL|파일 바로가기|
 |---|---|---|
-|강의 홈|https://kfedu.or.kr/std/lecture|[[🔗]](kfedu.or.kr\std\lecture.css)|
+|강의 홈|https://kfedu.or.kr/std/lecture|[[🔗]](./kfedu.or.kr/std/lecture.css)|
