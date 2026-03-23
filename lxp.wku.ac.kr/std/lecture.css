@@ -1,0 +1,171 @@
+:root {
+    --first-bar-bg-color: #582c4d;
+    --first-bar-text-color: pink;
+    --second-bar-bg-color: #A26769;
+    --second-bar-text-color: ;
+}
+
+html[data-boxed-layout=boxed] .container-fluid, html[data-boxed-layout=boxed] .container-sm, html[data-boxed-layout=boxed] .container-md, html[data-boxed-layout=boxed] .container-lg, html[data-boxed-layout=boxed] .container-xl, html[data-boxed-layout=boxed] .container-xxl {
+  max-width: 900px;
+}
+
+header > div:nth-of-type(1) {
+    background-color: var(--first-bar-bg-color) !important;
+}
+
+#google_translate_element div {
+    background-color: color-mix(in srgb, var(--first-bar-bg-color), var(--first-bar-text-color) 25%) !important;
+}
+
+#google_translate_element div div img {
+/*     visibility: hidden; */
+    display: none;
+}
+
+#google_translate_element div div span a span:nth-of-type(1)::before {
+    content: "🌐";
+}
+
+#google_translate_element div div span {
+    margin: 0 0.2em;
+}
+
+#google_translate_element div div span, #message_cnt, .ri-mail-line {
+    color: var(--first-bar-text-color) !important;
+}
+
+#google_translate_element div div span a span:nth-of-type(2) {
+    border-left: 1px solid color-mix(in srgb, var(--first-bar-text-color), var(--first-bar-bg-color) 50%) !important;
+}
+
+.site-logo a.logo-img img {
+    height: 30px;
+}
+
+.rounded-circle {
+    display: none;
+}
+
+.header-fp .header-sticky .navbar {
+    padding: 0.5rem !important;
+}
+
+.btn-mylecture-select::after {
+    display: none;
+}
+
+.location-menu-classroom {
+    display: none;
+}
+
+.card {
+    border: solid 1px #d0d9ea;
+    border-radius: 1rem;
+    
+    padding: 1.5rem;
+    margin: 0 auto var(--bs-gutter-x);
+}
+
+.page-title-box .page-title {
+    font-size: 1.2rem;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.attendColor05 {
+    background-color: #fff;
+}
+
+.badge[class*="attendColor"] {
+    color: #25C189;
+    border: #25C189 solid 1px;
+}
+
+#lmsLayout .pageTitleArea {
+    display: none;
+}
+
+/* 공지사항 */
+#noticeList {
+    height: 150px !important;
+}
+
+.tabulator .tabulator-tableholder {
+    overflow-x: hidden;
+}
+
+/* 오늘의 주차시 강의수강 */
+#weekIdx1::before {
+    content: "수강하기";
+    display: inline-block;
+    margin: 0 0 0.5rem 1.4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    
+}
+
+.lectureDescBox .card-header {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.lectureDescBox .lecture-item .item-head .seqInfo span:nth-of-type(1) {
+    margin-right: 0.5rem;
+}
+
+.lectureDescBox .lecture-item .item-head .seqInfo span:nth-of-type(1)::before {
+    content: "⌚";
+}
+
+.lectureDescBox .lecture-item .item-head .seqInfo span:nth-of-type(2) {
+    font-size: 0;
+    margin-left: 0.5rem;
+}
+
+.lectureDescBox .lecture-item .item-head .seqInfo span:nth-of-type(2)::before {
+    content: "상태:";
+    font-size: 14px;
+}
+
+.lectureDescBox .card-header .status {
+    margin-left: 0.5em;
+}
+
+
+.lectureDescBox .lecture-item {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#weekList .lectureDescBox .lecture-item .item-head .seqInfo .badge {
+    margin-left: 0.5em;
+}
+
+.lecture-item .lecture-list > li .text_badge {
+    border-radius: 5px;
+}
+
+.table_dataBlank.horizontal p {
+    display: none;
+}
+
+/* 진행중 기타 학습요소 */
+#weekIdx0::before {
+    content: "강의자료";
+    display: inline-block;
+    margin: 0 0 0.5rem 1.4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+#weekIdx0 {
+    margin-bottom: 5rem;
+}
+
+.table_dataBlank {
+    display: none;
+}
