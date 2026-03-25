@@ -12,3 +12,4 @@
 |웹페이지|URL|파일 바로가기|
 |---|---|---|
 |강의 홈|https://kfedu.or.kr/std/lecture|[[🔗]](./kfedu.or.kr/std/lecture.css)|
+|강의수강|https://kfedu.or.kr/std/course|[[🔗]](./kfedu.or.kr/std/course.css)|
